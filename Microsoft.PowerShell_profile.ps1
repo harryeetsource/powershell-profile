@@ -204,6 +204,9 @@ function pkill($name) {
 function pgrep($name) {
         Get-Process $name
 }
+function wget($url, $file) {
+	 Invoke-Webrequest -uri $url -outfile $file
+}
 
 
 ## Final Line to set prompt
